@@ -1,7 +1,7 @@
 ## Discover Course: Rocketseat 🎓🚀
 My first programming formal project.
 
-🛠️ Features HTML, CSS, Javascript, Figma, Git and Github studies.
+🛠️ Features HTML, CSS, Javascript, Figma, Git and Github studies with **responsive design**.
 
 ### 🌐 Access
 🔗 [Final project: Online](https://danielcrema.github.io/rocketseat-discover-course/)
@@ -11,7 +11,16 @@ My first programming formal project.
 ### Done at 👨‍💻🗓️
 - Aug 25, 2023
 
-#### I leave the original README.md in portuguese below, as a memorial and to give the proper credits to Rocketseat.
+## 📸 Screenshots
+### Mobile
+![Screenshot Mobile](./screenshot-mobile.png)
+### Desktop
+![Screenshot Desktop](./screenshot-desktop.png)
+
+<br/>
+<br/>
+
+### 📁 I leave the original README.md in portuguese below, as a memorial and to give the proper credits to Rocketseat.
 
 <br/>
 <h1 align="center"> DevLinks </h1>
