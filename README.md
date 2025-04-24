@@ -8,7 +8,10 @@ My first programming formal project.
 
 🔗 [Certificate](https://app.rocketseat.com.br/certificates/037602cb-38cf-4d94-bc1b-08df1b25e4f7)
 
-I leave the original README.md in portuguese below, as a memorial and to give the proper credits to Rocketseat.
+### Done at 👨‍💻🗓️
+- Aug 25, 2023
+
+#### I leave the original README.md in portuguese below, as a memorial and to give the proper credits to Rocketseat.
 
 <br/>
 <br/>
