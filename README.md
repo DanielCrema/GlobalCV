@@ -14,7 +14,6 @@ My first programming formal project.
 #### I leave the original README.md in portuguese below, as a memorial and to give the proper credits to Rocketseat.
 
 <br/>
-<br/>
 <h1 align="center"> DevLinks </h1>
 <p align="center">
 Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
