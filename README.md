@@ -5,10 +5,10 @@
 👉 Multilingüe para tu comodidad  
 👉 Multilingue pour votre commodité  
 
-## 🌐 Access
-🔗 [Website]()
+### 🌐 Access
+#### 🔗 [Website]()
 
-## 📜 Certificates
+## 📜 My certificates
 
 ### 🌍🌎🌏 Multi-Language for your convenience
 
@@ -16,25 +16,25 @@
 
 <img src="./assets/icon-flag-br.svg" width="35"/>
 
-A pasta [**certificates**](./certificates/) contém certificados oficiais expedidos pela [**Alura**](https://www.alura.com.br) referentes ao programa `ONE - Oracle Next Education`.
+A pasta [**certificates**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/) contém certificados oficiais expedidos pela [**Alura**](https://www.alura.com.br) referentes ao programa `ONE - Oracle Next Education`.
 
 O `certificado ONE` completo se encontra em:
 
-#### 🔗 [**Certificado: ONE - Oracle Next Education**](./certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado.pdf)
+#### 🔗 [**Certificado: ONE - Oracle Next Education**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado.pdf)
 <br/>
 <img src="./assets/icon-flag-en.svg" width="35"/>
 
-The [**certificates**](./certificates/) folder contains official certificates issued by [**Alura**](https://www.alura.com.br) related to the `ONE - Oracle Next Education` program.
+The [**certificates**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/) folder contains official certificates issued by [**Alura**](https://www.alura.com.br) related to the `ONE - Oracle Next Education` program.
 
 The full `ONE certificate` can be found at:
-#### 🔗 [**Certificate: ONE - Oracle Next Education**](./certificates/Daniel%20Borges%20Crema%20-%20Program%20ONE%20Certificate.pdf)
+#### 🔗 [**Certificate: ONE - Oracle Next Education**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/Daniel%20Borges%20Crema%20-%20Program%20ONE%20Certificate.pdf)
 <br/>
 <img src="./assets/icon-flag-es.svg" width="35"/>
 
-La carpeta [**certificates**](./certificates/) contiene certificados oficiales emitidos por [**Alura**](https://www.alura.com.br) correspondientes al programa `ONE - Oracle Next Education`.
+La carpeta [**certificates**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/) contiene certificados oficiales emitidos por [**Alura**](https://www.alura.com.br) correspondientes al programa `ONE - Oracle Next Education`.
 
 El `certificado ONE` completo se encuentra en:
-#### 🔗 [**Certificado: ONE - Oracle Next Education**](./certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado%20-%20Es.pdf)
+#### 🔗 [**Certificado: ONE - Oracle Next Education**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado%20-%20Es.pdf)
 <br/>
 
 ## 📸 Screenshots
