@@ -1,15 +1,41 @@
-## Discover Course: Rocketseat 🎓🚀
-My first programming formal project.
+# My Global CV 🎓
+🌍🌎🌏  
+👉 Multi-language for your convenience  
+👉 Multilíngue para sua comodidade  
+👉 Multilingüe para tu comodidad  
+👉 Multilingue pour votre commodité  
 
-🛠️ Features HTML, CSS, Javascript, Figma, Git and Github studies with **responsive design**.
+## 🌐 Access
+🔗 [Website]()
 
-### 🌐 Access
-🔗 [Final project: Online](https://danielcrema.github.io/rocketseat-discover-course/)
+## 📜 Certificates
 
-🔗 [Certificate](https://app.rocketseat.com.br/certificates/037602cb-38cf-4d94-bc1b-08df1b25e4f7)
+### 🌍🌎🌏 Multi-Language for your convenience
 
-### Done at 👨‍💻🗓️
-- Aug 25, 2023
+<br/>
+
+<img src="./assets/icon-flag-br.svg" width="35"/>
+
+A pasta [**certificates**](./certificates/) contém certificados oficiais expedidos pela [**Alura**](https://www.alura.com.br) referentes ao programa `ONE - Oracle Next Education`.
+
+O `certificado ONE` completo se encontra em:
+
+#### 🔗 [**Certificado: ONE - Oracle Next Education**](./certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado.pdf)
+<br/>
+<img src="./assets/icon-flag-en.svg" width="35"/>
+
+The [**certificates**](./certificates/) folder contains official certificates issued by [**Alura**](https://www.alura.com.br) related to the `ONE - Oracle Next Education` program.
+
+The full `ONE certificate` can be found at:
+#### 🔗 [**Certificate: ONE - Oracle Next Education**](./certificates/Daniel%20Borges%20Crema%20-%20Program%20ONE%20Certificate.pdf)
+<br/>
+<img src="./assets/icon-flag-es.svg" width="35"/>
+
+La carpeta [**certificates**](./certificates/) contiene certificados oficiales emitidos por [**Alura**](https://www.alura.com.br) correspondientes al programa `ONE - Oracle Next Education`.
+
+El `certificado ONE` completo se encuentra en:
+#### 🔗 [**Certificado: ONE - Oracle Next Education**](./certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado%20-%20Es.pdf)
+<br/>
 
 ## 📸 Screenshots
 ### Mobile
@@ -17,52 +43,38 @@ My first programming formal project.
 ### Desktop
 ![Screenshot Desktop](./screenshot-desktop.png)
 
-<br/>
-<br/>
+## 📝 License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-### 📁 I leave the original README.md in portuguese below, as a memorial and to give the proper credits to Rocketseat.
+## 🎓 Credits
+Developed by [**Daniel Borges Crema**](https://github.com/DanielCrema) under the MIT License.
 
-<br/>
-<h1 align="center"> DevLinks </h1>
-<p align="center">
-Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB. <br/>
-<a href="https://lp.rocketseat.com.br/devlinks/inscricao?utm_source=github&utm_medium=descricao&utm_campaign=capture-devlinks&utm_term=organic&utm_content=descricao-github-mayk-brito">Estude esse projeto em formato de vídeo clicando aqui.</a>
+
+*Special thanks* to:  
+🕋🤲 **Almighty God** (ﷻ), for having given me intelligence and persistence to persevere.
+
+Then:
+
+- People:
+    - **My family** - For the nurturing and support.
+    - [**Cadu Olegario**](https://github.com/CaduOlegario) - For his classes and support.
+    - [**David Palis Neto**](https://github.com/dpalisn) - For his friendship and support.
+
+- Institutions:
+    - [**Oracle**](https://www.oracle.com/) for sponsoring my Data Science Specialization.
+    - [**Alura**](https://www.alura.com.br/) for providing the course materials and support.
+    - [**Rocketseat**](https://www.rocketseat.com.br/) and [**Mayk Brito**](https://github.com/maykbrito) - For studying materials and courses.
+    - [**Origamid**](https://www.origamid.com/) - For studying materials and courses.
+    - [**iuricode (Iuri Silva)**](https://github.com/iuricode) - For studying materials.
+    - [**Python community**](https://www.python.org/) for providing top-tier open-source libraries and resources.
+
+<p>
+    <a href="https://github.com/DanielCrema/oracle_one-data-science-course/blob/main/certificates/Daniel%20Borges%20Crema%20-%20Program%20ONE%20Certificate.pdf" target="_blank" rel="noreferrer">
+        <img src="https://raw.githubusercontent.com/devicons/devicon/ca28c779441053191ff11710fe24a9e6c23690d6/icons/oracle/oracle-original.svg" alt="logo-oracle" style="width: 70px"/>  
+    </a>
 </p>
-
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
+<p>
+    <a href="https://github.com/DanielCrema/oracle_one-data-science-course/blob/main/certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado%20-%20Es.pdf" target="_blank" rel="noreferrer">
+        <img src="https://moebius78.github.io/moebius78-sprint03-aluraONE.github.io/assets/Oracle_Alura.png" alt="logo-oracle-alura-latam" style="width: 115px; background: #FCFCFC; color: #333; padding: 2px 3px"/>  
+    </a>
 </p>
-
-<p align="center">
-  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
-</p>
-
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML e CSS
-- JavaScript
-- Git e Github
-- Figma
-
-## 💻 Projeto
-
-O DevLinks é um agregador de links para usar como cartão de visitas online.
-
-- [Acesse o projeto finalizado, online](https://maykbrito.github.io/devlinks)
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/community/file/1187422022288947321). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
-
----
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)

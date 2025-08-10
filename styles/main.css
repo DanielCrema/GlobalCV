@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  min-height: 100vh;
+}
+
 :root {
   --text-color: white;
   --bg-url: url(../assets/bg-mobile.jpg);
@@ -31,13 +35,13 @@ body * {
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
-    height: 100vh;
+    min-height: 100%;
   }
 
   #container {
     width: 100%;
     max-width: 588px;
-    margin: 56px auto 0px;
+    margin: 26px auto 0px;
     padding: 0 24px;
   }
 
@@ -197,6 +201,12 @@ body {
 
     .light {
       --bg-url: url(../assets/bg-desktop-light.jpg);
+    }
+  }
+
+  @media(max-width: 400px) {
+    #container {
+      margin-top: 14px;
     }
   }
 
