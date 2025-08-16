@@ -9,14 +9,17 @@ let dropdownVisible = false
 
 function toggleMode() {
     switchMode.addEventListener('click', () => {
+        const alt = "Avatar Daniel Crema"
+        const darkSrc = "./assets/avatar.png"
+        const lightSrc = "./assets/avatar-light.png"
+        
         html.classList.toggle("light")
-
         if (html.classList.contains("light")) {
-            img.setAttribute("src", "./assets/avatar-light.png")
-            img.setAttribute("alt", "Avatar Daniel Crema for Light-Mode")
+            img.setAttribute("alt", alt)
+            img.setAttribute("src", lightSrc)
         } else {
-            img.setAttribute("src", "./assets/avatar.png")
-            img.setAttribute("alt", "Avatar Daniel Crema")
+            img.setAttribute("alt", alt)
+            img.setAttribute("src", darkSrc)
         }
     })
 }
