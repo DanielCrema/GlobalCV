@@ -43,6 +43,42 @@ body {
     max-width: 588px;
     margin: 26px auto 0px;
     padding: 0 24px;
+    position: relative;
+  }
+
+  #containerLang {
+    position: absolute;
+    margin: 24px 10% 0 0;
+    right: 0;
+  }
+
+  #langPrimary {
+    display: flex;
+    place-content: center;
+    padding: 5.125px 4.875px 0px 0px;
+  }
+
+  #langDropdown {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 4px 2px;
+    background-color: var(--surface-color);
+    border: 1px solid var(--stroke-color);
+    border-radius: 8px;
+
+    transition: all 0.3s;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+
+  .clickable:hover {
+    opacity: 0.8;
   }
 
   #profile {
@@ -155,6 +191,16 @@ body {
   .icon-flag {
     width: 24px;
     height: 24px;
+  }
+
+  .br {
+    width: 28px;
+    height: 28px;
+  }
+
+  .fr {
+    width: 22px;
+    height: 22px;
   }
 
   #email {
