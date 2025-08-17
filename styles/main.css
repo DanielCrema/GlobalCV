@@ -55,22 +55,45 @@ body {
   #langPrimary {
     display: flex;
     place-content: center;
-    padding: 5.125px 4.875px 0px 0px;
+    padding: 1px 4.75px 0px 0px;
+  }
+
+  #langPrimary.langPrimaryBr {
+    padding: 0.75px 0.75px 0px 0px;
+  }
+
+  #langPrimary.langPrimaryEs {
+    padding: 0.75px 2.75px 0px 0px;
   }
 
   #langDropdown {
     display: none;
-    flex-direction: column;
-    gap: 4px;
-    justify-content: center;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    justify-items: center;
     align-items: center;
 
-    padding: 4px 2px;
     background-color: var(--surface-color);
     border: 1px solid var(--stroke-color);
     border-radius: 8px;
 
     transition: all 0.3s;
+  }
+
+  #langDropdown > :first-child {
+    background-color: var(--highlight-color);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .icon-flag {
+    width: 28px;
+    height: 28px;
+    width: 100%;
+  }
+
+  .buttonLang {
+    margin-bottom: 6px;
   }
 
   .clickable {
@@ -186,21 +209,6 @@ body {
   ul li:hover {
     background: var(--surface-color-hover);
     border: 1.5px solid var(--text-color);
-  }
-
-  .icon-flag {
-    width: 24px;
-    height: 24px;
-  }
-
-  .br {
-    width: 28px;
-    height: 28px;
-  }
-
-  .fr {
-    width: 22px;
-    height: 22px;
   }
 
   #email {

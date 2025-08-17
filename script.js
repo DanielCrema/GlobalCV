@@ -31,7 +31,7 @@ function toggleDropdown() {
                 langDropdown.style.display = "none"
                 langPrimary.style.display = "flex"
             } else {
-                langDropdown.style.display = "flex"
+                langDropdown.style.display = "grid"
                 langPrimary.style.display = "none"
             }
             dropdownVisible = !dropdownVisible
