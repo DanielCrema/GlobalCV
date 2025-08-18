@@ -9,21 +9,22 @@
   --topbar-background: rgba(20, 20, 20, 0.9);
   --topbar-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   --topbar-button: #444;
+  --topbar-button-locked: #222;
   --topbar-button-hover: #666;
   --input-background: #222;
   --input-color: #FFF
 }
 
 .light {
-  --topbar-background: rgba(230, 230, 230, 0.9);
+  --topbar-background: rgba(220, 220, 220, 0.9);
   --topbar-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   --topbar-button: #a070ff;
+  --topbar-button-locked: #c0a0ff;
   --topbar-button-hover: #9250ff;
-  --input-background: #f5f5f5;
+  --input-background: #eee;
   --input-border: #ccc;
   --input-color: #222;
 }
-
 
 #containerFlipbook {
   margin-bottom: 32px;
@@ -64,6 +65,9 @@
 
 /* Buttons */
 .topbar button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: var(--topbar-button);
   color: white;
   border: none;
@@ -117,7 +121,7 @@
     max-width: 1800px;
   }
 
-  #containerTopbar{
+  #containerTopbar {
     margin-top: 28px;
     margin-bottom: 20px;
   }

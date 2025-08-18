@@ -2,50 +2,85 @@ const prevButton = document.getElementById("prevPage");
 const nextButton = document.getElementById("nextPage");
 const pageNumberInput = document.getElementById("pageNumber");
 
-async function prevListener() {
-    const currentPage = window.pageFlip.getCurrentPageIndex() + 1;
-    const pageCount = pageFlip.getPageCount();
-    const orientation = pageFlip.getOrientation();
-    const pagesLeap = orientation === "portrait" ? 1 : 2;
-
-    if (orientation === "portrait") {
-    pageFlip.turnToPrevPage();
-    } else {
-        pageFlip.flipPrev();
-    }
-
-    if (currentPage - pagesLeap > 0) {
-        pageNumberInput.value = `${currentPage - pagesLeap}/${pageCount}`;
-    }
-
-    if (orientation === "landscape") {
-        prevButton.disabled = true;
-        await new Promise(r => setTimeout(r, 1000));
-        prevButton.disabled = false;
+const styleSheets = document.styleSheets;
+let cvSheet = null;
+for (let sheet of styleSheets) {
+    if (sheet.href && sheet.href.endsWith("cv.css")) {
+        cvSheet = sheet;
+        break;
     }
 }
 
-async function nextListener() {
-    const currentPage = window.pageFlip.getCurrentPageIndex() + 1;
+const hoverRules = new WeakMap();
+
+function changeHoverBackground(button, background) {
+    if (hoverRules.has(button)) {
+        const index = hoverRules.get(button);
+        cvSheet.deleteRule(index);
+        hoverRules.delete(button);
+    }
+
+    const rule = `#${button.id}:hover { background: ${background} !important }`;
+    const index = cvSheet.insertRule(rule, cvSheet.cssRules.length);
+    hoverRules.set(button, index);
+}
+
+function lockButton(button) {
+    button.disabled = true;
+    button.style.background = "var(--topbar-button-locked)";
+    button.style.cursor = "not-allowed";
+    if (cvSheet) {
+        changeHoverBackground(button, "var(--topbar-button-locked)");
+    }
+}
+
+// Unlock button: remove hover style
+function unlockButton(button) {
+    button.disabled = false;
+    button.style.background = "var(--topbar-button)";
+    button.style.cursor = "pointer";
+    if (cvSheet) {
+        changeHoverBackground(button, "var(--topbar-button-hover)");
+    }
+}
+
+function turnPage(direction) {
     const pageCount = pageFlip.getPageCount();
+    if (direction === 'prev' &&
+        pageNumberInput.value === `1/${pageCount}`) {
+        lockButton(prevButton)
+        return
+    }
+    if (direction === 'next' &&
+        pageNumberInput.value === `${pageCount}/${pageCount}`) {
+        lockButton(nextButton)
+        return
+    }
+
     const orientation = pageFlip.getOrientation();
     const pagesLeap = orientation === "portrait" ? 1 : 2;
 
-    pageFlip.flipNext({ corner: 'bottom' })
+    const currentPage = window.pageFlip.getCurrentPageIndex() + 1;
+    const previousPage = currentPage - pagesLeap;
+    const nextPage = currentPage + pagesLeap;
 
-    if (currentPage + pagesLeap <= pageCount) {
-        pageNumberInput.value = `${currentPage + pagesLeap}/${pageCount}`;
+    if (direction === 'prev' && previousPage > 0) {
+        unlockButton(nextButton)
+        pageFlip.turnToPrevPage();
+        pageNumberInput.value = `${previousPage}/${pageCount}`;
     }
-    
-    nextButton.disabled = true;
-    await new Promise(r => setTimeout(r, 1000));
-    nextButton.disabled = false;
+
+    if (direction === 'next' && nextPage <= pageCount) {
+        unlockButton(prevButton)
+        pageFlip.turnToNextPage();
+        pageNumberInput.value = `${nextPage}/${pageCount}`;
+    }
 }
 
-prevButton.addEventListener("click", async () => {
-    await prevListener();
+prevButton.addEventListener("click", () => {
+    turnPage('prev');
 });
 
-nextButton.addEventListener("click", async () => {
-    await nextListener();
+nextButton.addEventListener("click", () => {
+    turnPage('next');
 });

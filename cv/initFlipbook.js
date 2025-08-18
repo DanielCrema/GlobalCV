@@ -25,8 +25,9 @@ export function initFlipbook(PageFlipClass, pdfjsLib, pdfUrl, flipbookId) {
         usePortrait: true,
         autoSize: true,
         drawShadow: true,
-        mobileScrollSupport: true,
-        disableFlipByClick: true,
+        useMouseEvents: false,
+        mobileScrollSupport: false,
+        // clickEventForward: false,
     });
 
     pdfjsLib.getDocument(pdfUrl).promise.then(async (pdf) => {
