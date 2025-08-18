@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" id="english-page" class="cv-page">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://danielcrema.github.io/GlobalCV/assets/avatar-meta.png">
+    <meta name="twitter:image" content="https://danielcrema.github.io/GlobalCV/assets/avatar-meta.png">
+
+    <meta name="description" content="Daniel Crema – English CV | Data Science & Development">
+    <meta property="og:title" content="Daniel Crema – CV in English">
+    <meta name="twitter:title" content="Daniel Crema – CV in English">
+    <meta property="og:description" content="Explore Daniel Crema's professional CV in English.">
+    <meta name="twitter:description" content="Explore Daniel Crema's professional CV in English.">
+    <!-- End SEO -->
+
+    <link rel="stylesheet" href="../styles/main.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Nodlik/StPageFlip@master/src/Style/stPageFlip.css"> -->
+    <link rel="stylesheet" href="./cv.css">
+    <link rel="icon" href="../assets/favicon.png" type="image/png" sizes="32x32">
+    <title>Daniel Crema – CV | Data Science & Development</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="containerLang">
+            <div id="langPrimary" class="langPrimaryEn">
+                <img class="icon-flag en clickable buttonLang" src="../assets/icon-flag-en.svg"
+                    alt="Languages Button" />
+            </div>
+            <div id="langDropdown">
+                <img class="icon-flag en clickable buttonLang" src="../assets/icon-flag-en.svg"
+                    alt="Languages Button" />
+                <a href="../portuguese.html">
+                    <img class="icon-flag br clickable langSecondary" src="../assets/icon-flag-br.svg"
+                        alt="Português Flag" />
+                </a>
+                <a href="../spanish.html">
+                    <img class="icon-flag es clickable langSecondary" src="../assets/icon-flag-es.svg"
+                        alt="Español Flag" />
+                </a>
+                <a href="../french.html">
+                    <img class="icon-flag fr clickable langSecondary" src="../assets/icon-flag-fr.svg"
+                        alt="Français Flag" />
+                </a>
+            </div>
+        </div>
+
+        <div id="profile">
+            <img src="../assets/avatar.png" alt="Avatar Daniel Crema">
+            <p>@DanielCrema</p>
+        </div>
+
+        <div id="switch">
+            <button class="switchButton"></button>
+            <span></span>
+        </div>
+
+        <div id="title">
+            <p>International CV</p>
+        </div>
+
+        <div id="containerFlipbook">
+            <div id="containerTopbar">
+                <p class="topbarHeading">Pages</p>
+                <div class="topbar">
+                    <button id="prevPage">Previous</button>
+                    <input type="text" id="pageNumber" disabled />
+                    <button id="nextPage">Next</button>
+                </div>
+            </div>
+
+            <div id="flipbook"></div>
+        </div>
+
+        <div id="email">
+            <a href="mailto:danielborgescrema@gmail.com" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <p>danielborgescrema@gmail.com</p>
+        </div>
+
+        <div id="social-links">
+            <a href="https://github.com/DanielCrema" target="_blank">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="https://www.linkedin.com/in/daniel-crema-dev" target="_blank">
+                <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://wa.link/x1p73m" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </a>
+            <a href="https://danielcrema.carrd.co/" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="briefcase-outline"></ion-icon>
+            </a>
+        </div>
+
+        <footer>
+            <p lang="en">© Daniel Borges Crema. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../script.js"></script>
+    <script src="../structured-data.js"></script>
+
+    <!-- PDF.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script>
+        pdfjsLib.GlobalWorkerOptions.workerSrc =
+            'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
+    </script>
+    <!-- PageFlip -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.js"></script>
+    <!-- Init Flipbook module -->
+    <script type="module">
+        import { initFlipbook } from './initFlipbook.js';
+        window.addEventListener('DOMContentLoaded', () => {
+            window.pageFlip = initFlipbook(St.PageFlip, pdfjsLib, '../pdfs/daniel_crema_data_scientist_cv.pdf', 'flipbook');
+        });
+    </script>
+    <!-- Configure Topbar Navigation -->
+    <script src="navigateFlipbook.js"></script>
+</html>

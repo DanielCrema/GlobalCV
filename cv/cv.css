@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --topbar-background: rgba(20, 20, 20, 0.9);
+  --topbar-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  --topbar-button: #444;
+  --topbar-button-hover: #666;
+  --input-background: #222;
+  --input-color: #FFF
+}
+
+.light {
+  --topbar-background: rgba(230, 230, 230, 0.9);
+  --topbar-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  --topbar-button: #a070ff;
+  --topbar-button-hover: #9250ff;
+  --input-background: #f5f5f5;
+  --input-border: #ccc;
+  --input-color: #222;
+}
+
+
+#containerFlipbook {
+  margin-bottom: 32px;
+}
+
+/* Topbar Container */
+#containerTopbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+  margin: 22px auto 14px;
+  width: 70%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.topbarHeading {
+  font-size: 14px;
+}
+
+/* Inner Topbar Layout */
+.topbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+
+  background: var(--topbar-background);
+  box-shadow: var(--topbar-box-shadow);
+  padding: 8px 16px;
+  width: 90%;
+  border-radius: 6px;
+}
+
+/* Buttons */
+.topbar button {
+  background: var(--topbar-button);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.topbar button:hover {
+  background: var(--topbar-button-hover);
+}
+
+/* Page Number Input */
+#pageNumber {
+  width: 50px;
+  text-align: center;
+  padding: 6px;
+  font-size: 14px;
+  border: 1px solid #777;
+  border-radius: 6px;
+  background: var(--input-background);
+  color: var(--input-color);
+  outline: none;
+}
+
+#pageNumber:focus {
+  border-color: #aaa;
+}
+
+@media(max-width: 590px) {
+  #container {
+    padding: 0;
+  }
+}
+
+@media(max-width: 400px) {
+  .topbar button {
+    font-size: 12px;
+  }
+
+  #pageNumber {
+    width: 40px;
+    font-size: 12px;
+  }
+}
+
+@media(min-width: 1200px) {
+  #container {
+    max-width: 1800px;
+  }
+
+  #containerTopbar{
+    margin-top: 28px;
+    margin-bottom: 20px;
+  }
+
+  .topbar {
+    width: 80%;
+  }
+}

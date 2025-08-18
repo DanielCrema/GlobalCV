@@ -9,10 +9,11 @@ let dropdownVisible = false
 
 function toggleMode() {
     switchMode.addEventListener('click', () => {
+        const isCvPage = html.classList.contains("cv-page")
         const alt = "Avatar Daniel Crema"
-        const darkSrc = "./assets/avatar.png"
-        const lightSrc = "./assets/avatar-light.png"
-        
+        const darkSrc = `${isCvPage ? ".." : "."}/assets/avatar.png`
+        const lightSrc = `${isCvPage ? ".." : "."}/assets/avatar-light.png`
+
         html.classList.toggle("light")
         if (html.classList.contains("light")) {
             img.setAttribute("alt", alt)
