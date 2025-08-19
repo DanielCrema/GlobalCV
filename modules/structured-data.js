@@ -5,7 +5,7 @@
             "@type": "Person",
             "name": "Daniel Borges Crema",
             "url": "https://danielcrema.github.io/GlobalCV/",
-            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.jpg",
+            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.png",
             "email": "danielborgescrema@gmail.com",
             "jobTitle": "Data Scientist & Analyst",
             "sameAs": [
@@ -20,7 +20,7 @@
             "@type": "Person",
             "name": "Daniel Borges Crema",
             "url": "https://danielcrema.github.io/GlobalCV/",
-            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.jpg",
+            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.png",
             "email": "danielborgescrema@gmail.com",
             "jobTitle": "Cientista de Dados e Analista",
             "sameAs": [
@@ -35,7 +35,7 @@
             "@type": "Person",
             "name": "Daniel Borges Crema",
             "url": "https://danielcrema.github.io/GlobalCV/",
-            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.jpg",
+            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.png",
             "email": "danielborgescrema@gmail.com",
             "jobTitle": "Científico de Datos y Analista",
             "sameAs": [
@@ -50,7 +50,7 @@
             "@type": "Person",
             "name": "Daniel Borges Crema",
             "url": "https://danielcrema.github.io/GlobalCV/",
-            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.jpg",
+            "image": "https://danielcrema.github.io/GlobalCV/assets/avatar-meta.png",
             "email": "danielborgescrema@gmail.com",
             "jobTitle": "Data Scientist et Analyste",
             "sameAs": [
