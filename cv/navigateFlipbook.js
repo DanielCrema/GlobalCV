@@ -65,15 +65,19 @@ function turnPage(direction) {
     const nextPage = currentPage + pagesLeap;
 
     if (direction === 'prev' && previousPage > 0) {
-        unlockButton(nextButton)
         pageFlip.turnToPrevPage();
         pageNumberInput.value = `${previousPage}/${pageCount}`;
+        if (nextButton.disabled === true) {
+            unlockButton(nextButton)
+        }
     }
 
     if (direction === 'next' && nextPage <= pageCount) {
-        unlockButton(prevButton)
         pageFlip.turnToNextPage();
         pageNumberInput.value = `${nextPage}/${pageCount}`;
+        if (prevButton.disabled === true) {
+            unlockButton(prevButton)
+        }
     }
 }
 

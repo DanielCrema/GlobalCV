@@ -131,3 +131,22 @@
     width: 80%;
   }
 }
+
+/* --- PageFlip touch-action override --- */
+/* 
+PageFlip locks horizontal scrolling inside the pdf document
+which makes zoom-in navigation in smartphones impossible.
+This workaround allows for pinch-to-zoom functionality
+by overriding the default css rule of PageFlip.
+*/
+
+.stf__parent,
+.stf__parent * {
+  /* Allow both axes panning by default */
+  touch-action: pan-x pan-y !important;
+  -ms-touch-action: pan-x pan-y !important;
+
+  /* Ensure overflow isn't clipped by the library */
+  overflow: visible !important;
+  -webkit-overflow-scrolling: auto !important;
+}
