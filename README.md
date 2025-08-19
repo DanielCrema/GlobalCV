@@ -37,12 +37,6 @@ El `certificado ONE` completo se encuentra en:
 #### 🔗 [**Certificado: ONE - Oracle Next Education**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado%20-%20Es.pdf)
 <br/>
 
-## 📸 Screenshots
-### Mobile
-![Screenshot Mobile](./screenshot-mobile.png)
-### Desktop
-![Screenshot Desktop](./screenshot-desktop.png)
-
 ## 📝 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
