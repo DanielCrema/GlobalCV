@@ -45,7 +45,6 @@ export function buildApp(language, relativePathToRoot) {
     }
 
     let appSetup = {};
-    let flagOrder = [];
     const langNamesNative = {
         en: "English",
         pt: "Português",
