@@ -155,7 +155,7 @@ ul li a {
 
 ul li:hover {
   background: var(--surface-color-hover);
-  border: 1.5px solid var(--text-color);
+  border: 1.3px solid var(--text-color);
 }
 
 #email {

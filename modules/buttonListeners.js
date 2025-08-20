@@ -56,7 +56,7 @@ function toggleDropdown() {
                         langPrimary.style.display = "flex"
                         dropdownVisible = false
                     }
-                }, 7000)
+                }, 4000)
             }
         })
     })
