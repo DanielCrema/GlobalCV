@@ -26,9 +26,63 @@
   --input-color: #222;
 }
 
+#containerLang {
+  position: absolute;
+  margin: 40px 10% 0 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+
+#langHeading {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  max-width: 72px;
+}
+
+.buttonLang {
+  margin-bottom: 6px;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.clickable:hover {
+  opacity: 0.8;
+}
+
+.icon-flag.clickable {
+  height: 32px;
+}
+
+#langDropdown {
+  display: none;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 2px;
+  justify-items: center;
+  align-items: center;
+
+  background-color: var(--surface-color);
+  border: 1px solid var(--stroke-color);
+  border-radius: 8px;
+
+  transition: all 0.3s;
+}
+
+#langDropdown> :first-child {
+  background-color: var(--highlight-color);
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
 #containerFlipbook {
   margin-bottom: 32px;
-  padding: 0px 8px;
+  padding: 0px 16px;
 }
 
 /* Topbar Container */
@@ -100,26 +154,19 @@
   border-color: #aaa;
 }
 
-@media(max-width: 590px) {
-  #container {
-    padding: 0;
-  }
-}
-
-@media(max-width: 400px) {
-  .topbar button {
-    font-size: 12px;
-  }
-
-  #pageNumber {
-    width: 40px;
-    font-size: 12px;
+@media(min-width: 1450px) {
+  #containerLang {
+    margin-right: 35%;
   }
 }
 
 @media(min-width: 1200px) {
   #container {
     max-width: 1800px;
+  }
+
+  #containerLang {
+    margin-right: 30%;
   }
 
   #containerTopbar {
@@ -129,6 +176,74 @@
 
   .topbar {
     width: 80%;
+  }
+}
+
+@media(max-width: 500px) {
+  #containerFlipbook {
+    padding: 0px 12px;
+  }
+}
+
+@media(max-width: 590px) {
+  #container {
+    padding: 0;
+  }
+
+  #containerLang {
+    margin-right: 8%;
+  }
+}
+
+@media(max-width: 400px) {
+  #profile img {
+    width: 105px;
+  }
+
+  #profile p {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+
+  #title {
+    font-size: 22px;
+  }
+
+  #switch {
+    margin: 0 auto;
+  }
+
+  #containerLang {
+    margin-right: 5%;
+  }
+
+  #langHeading {
+    font-size: 10px;
+  }
+
+  .icon-flag.clickable {
+    height: 26px;
+  }
+
+  #containerTopbar {
+    margin: 20px auto 12px;
+  }
+
+  .topbarHeading {
+    font-size: 12px;
+  }
+
+  .topbar button {
+    font-size: 12px;
+  }
+
+  #pageNumber {
+    width: 40px;
+    font-size: 12px;
+  }
+
+  #containerFlipbook {
+    padding: 0px 6px;
   }
 }
 

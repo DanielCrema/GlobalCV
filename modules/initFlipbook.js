@@ -15,8 +15,8 @@ export function initFlipbook(PageFlipClass, pdfjsLib, pdfUrl, flipbookId) {
     const pageFlip = new PageFlipClass(book, {
         width: 800,
         height: 1200,
-        minWidth: 300,
-        minHeight: 450,
+        minWidth: 280,
+        minHeight: 420,
         maxWidth: 1200,
         maxHeight: 1800,
         maxShadowOpacity: 0.5,

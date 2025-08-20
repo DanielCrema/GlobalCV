@@ -10,6 +10,7 @@ export function buildApp(language, relativePathToRoot) {
         prevButtonText: 'Previous',
         nextButtonText: 'Next',
         footer: '© Daniel Borges Crema. All rights reserved.',
+        langHeading: 'Select Language',
         flagOrder: ['en', 'br', 'es', 'fr'],
         flagLinks: ['', './portuguese.html', './spanish.html', './french.html']
     }
@@ -20,6 +21,7 @@ export function buildApp(language, relativePathToRoot) {
         prevButtonText: 'Anterior',
         nextButtonText: 'Próximo',
         footer: '© Daniel Borges Crema. Todos os direitos reservados.',
+        langHeading: 'Selecionar Idioma',
         flagOrder: ['br', 'en', 'es', 'fr'],
         flagLinks: ['', './english.html', './spanish.html', './french.html']
     }
@@ -30,6 +32,7 @@ export function buildApp(language, relativePathToRoot) {
         prevButtonText: 'Anterior',
         nextButtonText: 'Próximo',
         footer: '© Daniel Borges Crema. Todos los derechos reservados.',
+        langHeading: 'Seleccionar Idioma',
         flagOrder: ['es', 'en', 'br', 'fr'],
         flagLinks: ['', './english.html', './portuguese.html', './french.html']
     }
@@ -40,6 +43,7 @@ export function buildApp(language, relativePathToRoot) {
         prevButtonText: 'Précédent',
         nextButtonText: 'Suivant',
         footer: '© Daniel Borges Crema. Tous droits réservés.',
+        langHeading: 'Sélectionner Langue',
         flagOrder: ['fr', 'en', 'br', 'es'],
         flagLinks: ['', './english.html', './portuguese.html', './spanish.html']
     }
@@ -71,6 +75,7 @@ export function buildApp(language, relativePathToRoot) {
 
     const app = `
         <div id="containerLang">
+            <p id="langHeading">${appSetup.langHeading}</p>
             <div id="langPrimary" class="langPrimary${capitalize(language)}">
                 <img class="icon-flag ${appSetup.flagOrder[0]} clickable buttonLang" src="../assets/icon-flag-${appSetup.flagOrder[0]}.svg"
                     alt="Switch languages"/>
