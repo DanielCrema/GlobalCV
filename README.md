@@ -37,6 +37,46 @@ El `certificado ONE` completo se encuentra en:
 #### 🔗 [**Certificado: ONE - Oracle Next Education**](https://github.com/DanielCrema/oracle_one-data-science-course/tree/main/certificates/Daniel%20Borges%20Crema%20-%20Programa%20ONE%20Certificado%20-%20Es.pdf)
 <br/>
 
+## 🗂️ Project Structure
+```bash
+.
+│
+├── index.html                # Main page: English
+│
+├── cv/                       # CV content pages (organized by language)
+│
+├── documents/                # CV repository
+│
+├── assets/                   # Imagery of the application
+│
+├── modules/
+│   │   
+│   ├── buildApp.js           # Dynamic build of CV pages
+│   │   
+│   ├── buttonListeners.js    # Global buttonListeners
+│   │   
+│   ├── initFlipbook.js       # Flipbook builder
+│   │   
+│   ├── navigateFlipbook.js   # UI/UX of flipbooks
+│   │   
+│   └── structured-data.js    # Injects dynamic SEO JSON-LD schema
+│
+├── styles/
+│   │   
+│   ├── main.css              # Global CSS stylesheet
+│   │   
+│   └── cv.css                # CSS of CV pages
+│
+│   # Main pages: Multilanguage
+│
+├── french.html
+│
+├── portuguese.html
+│
+└── spanish.html
+
+```
+
 ## 📝 License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
