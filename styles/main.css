@@ -87,8 +87,12 @@ body {
   }
 
   .icon-flag {
-    width: 28px;
     height: 28px;
+    width: 100%;
+  }
+
+  .icon-flag.clickable {
+    height: 32px;
     width: 100%;
   }
 

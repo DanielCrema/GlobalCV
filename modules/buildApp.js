@@ -5,15 +5,43 @@ export function buildApp(language, relativePathToRoot) {
     }
 
     const englishSetup = {
-        html: {
-            lang: 'en',
-            id: 'english-page',
-        },
         title: 'International CV',
         topbarHeading: 'Pages',
         prevButtonText: 'Previous',
         nextButtonText: 'Next',
-        footer: '© Daniel Borges Crema. All rights reserved.'
+        footer: '© Daniel Borges Crema. All rights reserved.',
+        flagOrder: ['en', 'br', 'es', 'fr'],
+        flagLinks: ['', './portuguese.html', './spanish.html', './french.html']
+    }
+
+    const portugueseSetup = {
+        title: 'Currículo Internacional',
+        topbarHeading: 'Páginas',
+        prevButtonText: 'Anterior',
+        nextButtonText: 'Próximo',
+        footer: '© Daniel Borges Crema. Todos os direitos reservados.',
+        flagOrder: ['br', 'en', 'es', 'fr'],
+        flagLinks: ['', './english.html', './spanish.html', './french.html']
+    }
+
+    const spanishSetup = {
+        title: 'Currículo Internacional',
+        topbarHeading: 'Páginas',
+        prevButtonText: 'Anterior',
+        nextButtonText: 'Próximo',
+        footer: '© Daniel Borges Crema. Todos los derechos reservados.',
+        flagOrder: ['es', 'en', 'br', 'fr'],
+        flagLinks: ['', './english.html', './portuguese.html', './french.html']
+    }
+
+    const frenchSetup = {
+        title: 'CV International',
+        topbarHeading: 'Pages',
+        prevButtonText: 'Précédent',
+        nextButtonText: 'Suivant',
+        footer: '© Daniel Borges Crema. Tous droits réservés.',
+        flagOrder: ['fr', 'en', 'br', 'es'],
+        flagLinks: ['', './english.html', './portuguese.html', './spanish.html']
     }
 
     let appSetup = {};
@@ -28,19 +56,15 @@ export function buildApp(language, relativePathToRoot) {
     switch (language) {
         case 'en':
             appSetup = englishSetup;
-            flagOrder = ['en', 'br', 'es', 'fr'];
             break;
         case 'pt':
             appSetup = portugueseSetup;
-            flagOrder = ['br', 'en', 'es', 'fr'];
             break;
         case 'es':
             appSetup = spanishSetup;
-            flagOrder = ['es', 'en', 'br', 'fr'];
             break;
         case 'fr':
             appSetup = frenchSetup;
-            flagOrder = ['fr', 'en', 'br', 'es'];
             break;
         default:
             appSetup = englishSetup;
@@ -49,23 +73,23 @@ export function buildApp(language, relativePathToRoot) {
     const app = `
         <div id="containerLang">
             <div id="langPrimary" class="langPrimary${capitalize(language)}">
-                <img class="icon-flag ${language} clickable buttonLang" src="../assets/icon-flag-${language}.svg"
-                    alt="Languages Button: ${langNamesNative[language]}" />
+                <img class="icon-flag ${appSetup.flagOrder[0]} clickable buttonLang" src="../assets/icon-flag-${appSetup.flagOrder[0]}.svg"
+                    alt="Switch languages"/>
             </div>
             <div id="langDropdown">
-                <img class="icon-flag ${language} clickable buttonLang" src="../assets/icon-flag-${language}.svg"
-                    alt="Languages Button: ${langNamesNative[language]}" />
-                <a href="../portuguese.html">
-                    <img class="icon-flag ${flagOrder[1]} clickable langSecondary" src="../assets/icon-flag-${flagOrder[1]}.svg"
-                        alt="${langNamesNative[flagOrder[1]]} Flag" />
+                <img class="icon-flag ${appSetup.flagOrder[0]} clickable buttonLang" src="../assets/icon-flag-${appSetup.flagOrder[0]}.svg"
+                    alt="Switch languages: Close" />
+                <a href="${appSetup.flagLinks[1]}">
+                    <img class="icon-flag ${appSetup.flagOrder[1]} clickable langSecondary" src="../assets/icon-flag-${appSetup.flagOrder[1]}.svg"
+                        alt="${langNamesNative[appSetup.flagOrder[1]]} Flag" />
                 </a>
-                <a href="../spanish.html">
-                    <img class="icon-flag ${flagOrder[2]} clickable langSecondary" src="../assets/icon-flag-${flagOrder[2]}.svg"
-                        alt="${langNamesNative[flagOrder[2]]} Flag" />
+                <a href="${appSetup.flagLinks[2]}">
+                    <img class="icon-flag ${appSetup.flagOrder[2]} clickable langSecondary" src="../assets/icon-flag-${appSetup.flagOrder[2]}.svg"
+                        alt="${langNamesNative[appSetup.flagOrder[2]]} Flag" />
                 </a>
-                <a href="../french.html">
-                    <img class="icon-flag ${flagOrder[3]} clickable langSecondary" src="../assets/icon-flag-${flagOrder[3]}.svg"
-                        alt="${langNamesNative[flagOrder[3]]} Flag" />
+                <a href="${appSetup.flagLinks[3]}">
+                    <img class="icon-flag ${appSetup.flagOrder[3]} clickable langSecondary" src="../assets/icon-flag-${appSetup.flagOrder[3]}.svg"
+                        alt="${langNamesNative[appSetup.flagOrder[3]]} Flag" />
                 </a>
             </div>
         </div>
@@ -124,6 +148,7 @@ export function buildApp(language, relativePathToRoot) {
         </footer>
     `
 
+    // Appending the body and scripts
     function injectScript(src) {
         const script = document.createElement("script");
         script.src = src;
@@ -133,8 +158,6 @@ export function buildApp(language, relativePathToRoot) {
     const container = document.getElementById("container");
     container.innerHTML = "";
     container.innerHTML = app;
-    document.documentElement.lang = appSetup.html.lang; // update <html lang="">
-    document.documentElement.id = appSetup.html.id; // update <html id="">
 
     injectScript(`${relativePathToRoot}/modules/buttonListeners.js`);
     injectScript(`${relativePathToRoot}/modules/structured-data.js`);
