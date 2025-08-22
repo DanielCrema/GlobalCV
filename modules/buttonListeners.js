@@ -13,15 +13,15 @@ function toggleMode() {
         if (html.classList.contains("light")) {
             img.setAttribute("alt", alt)
             img.setAttribute("src", lightSrc)
-            sessionStorage.setItem("lightMode", "true");
+            localStorage.setItem("lightMode", "true");
         } else {
             img.setAttribute("alt", alt)
             img.setAttribute("src", darkSrc)
-            sessionStorage.setItem("lightMode", "false");
+            localStorage.setItem("lightMode", "false");
         }
     })
 
-    if (sessionStorage.getItem("lightMode") === "true") {
+    if (localStorage.getItem("lightMode") === "true") {
         switchMode.click()
     }
 }
