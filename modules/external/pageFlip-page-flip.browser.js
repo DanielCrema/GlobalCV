@@ -1,5 +1,5 @@
 /**
- * Link to the source of this code copied on 22/08/2025
+ * Link to the source of this code copied on 2025-08-22
  * 
  * => https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.js
  * 

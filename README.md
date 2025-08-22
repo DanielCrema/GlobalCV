@@ -51,6 +51,19 @@ El `certificado ONE` completo se encuentra en:
 │
 ├── modules/
 │   │   
+│   ├── external/
+│   │   │   # Internalized external modules: 2025-08-22
+│   │   │   # Proper reference to the links are available in each file header
+│   │   │
+│   │   │   # Names refer to the original file names:
+│   │   │   # pageFlip-[original name] & pdfJs-[original name]
+│   │   │
+│   │   ├── pageFlip-page-flip.browser.js
+│   │   │
+│   │   ├── pdfJs-pdf.min.js
+│   │   │
+│   │   └── pdfJs-pdf.worker.min.js
+│   │   
 │   ├── buildApp.js           # Dynamic build of CV pages
 │   │   
 │   ├── buttonListeners.js    # Global buttonListeners
