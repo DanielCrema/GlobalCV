@@ -102,11 +102,16 @@
     <!-- PageFlip -->
     <script src="../modules/external/pageFlip-page-flip.browser.js"></script>
 
-    <!-- Init Flipbook module -->
+    <!-- Init Flipbook and Download button module -->
     <script type="module">
         import { initFlipbook } from '../modules/initFlipbook.js';
+        import { initDownloadButton } from '../modules/initDownloadButton.js';
+
+        const fileName = `daniel_crema_data_scientist_cv_${document.documentElement.lang}.pdf`;
+        const filePath = `../documents/${fileName}`;
         window.addEventListener('DOMContentLoaded', () => {
-            window.pageFlip = initFlipbook(St.PageFlip, pdfjsLib, `../documents/daniel_crema_data_scientist_cv_${document.documentElement.lang}.pdf`, 'flipbook');
+            window.pageFlip = initFlipbook(St.PageFlip, pdfjsLib, filePath, 'flipbook');
+            initDownloadButton(filePath);
         });
     </script>
 </body>

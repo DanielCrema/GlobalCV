@@ -41,13 +41,13 @@ El `certificado ONE` completo se encuentra en:
 ```bash
 .
 │
-├── index.html                # Main page: English
+├── index.html                 # Main page: English
 │
-├── cv/                       # CV content pages (organized by language)
+├── cv/                        # CV content pages (organized by language)
 │
-├── documents/                # CV repository
+├── documents/                 # CV repository
 │
-├── assets/                   # Imagery of the application
+├── assets/                    # Imagery of the application
 │
 ├── modules/
 │   │   
@@ -64,21 +64,23 @@ El `certificado ONE` completo se encuentra en:
 │   │   │
 │   │   └── pdfJs-pdf.worker.min.js
 │   │   
-│   ├── buildApp.js           # Dynamic build of CV pages
+│   ├── buildApp.js            # Dynamic build of CV pages
 │   │   
-│   ├── buttonListeners.js    # Global buttonListeners
+│   ├── buttonListeners.js     # Global buttonListeners
 │   │   
-│   ├── initFlipbook.js       # Flipbook builder
+│   ├── initDownloadButton.js  # Injects link to the download button
 │   │   
-│   ├── navigateFlipbook.js   # UI/UX of flipbooks
+│   ├── initFlipbook.js        # Flipbook builder
 │   │   
-│   └── structured-data.js    # Injects dynamic SEO JSON-LD schema
+│   ├── navigateFlipbook.js    # UI/UX of flipbooks
+│   │   
+│   └── structured-data.js     # Injects dynamic SEO JSON-LD schema
 │
 ├── styles/
 │   │   
-│   ├── main.css              # Global CSS stylesheet
+│   ├── main.css               # Global CSS stylesheet
 │   │   
-│   └── cv.css                # CSS of CV pages
+│   └── cv.css                 # CSS of CV pages
 │
 │   # Main pages: Multilanguage
 │

@@ -11,6 +11,7 @@ export function buildApp(language, relativePathToRoot) {
         nextButtonText: 'Next',
         footer: '© Daniel Borges Crema. All rights reserved.',
         langHeading: 'Select Language',
+        downloadButtonLabel: 'Download this CV',
         flagOrder: ['en', 'br', 'es', 'fr'],
         flagLinks: ['', './portuguese.html', './spanish.html', './french.html']
     }
@@ -22,6 +23,7 @@ export function buildApp(language, relativePathToRoot) {
         nextButtonText: 'Próximo',
         footer: '© Daniel Borges Crema. Todos os direitos reservados.',
         langHeading: 'Selecionar Idioma',
+        downloadButtonLabel: 'Baixar este CV',
         flagOrder: ['br', 'en', 'es', 'fr'],
         flagLinks: ['', './english.html', './spanish.html', './french.html']
     }
@@ -33,6 +35,7 @@ export function buildApp(language, relativePathToRoot) {
         nextButtonText: 'Próximo',
         footer: '© Daniel Borges Crema. Todos los derechos reservados.',
         langHeading: 'Seleccionar Idioma',
+        downloadButtonLabel: 'Descargar este CV',
         flagOrder: ['es', 'en', 'br', 'fr'],
         flagLinks: ['', './english.html', './portuguese.html', './french.html']
     }
@@ -44,6 +47,7 @@ export function buildApp(language, relativePathToRoot) {
         nextButtonText: 'Suivant',
         footer: '© Daniel Borges Crema. Tous droits réservés.',
         langHeading: 'Sélectionner Langue',
+        downloadButtonLabel: 'Télécharger ce CV',
         flagOrder: ['fr', 'en', 'br', 'es'],
         flagLinks: ['', './english.html', './portuguese.html', './spanish.html']
     }
@@ -130,6 +134,13 @@ export function buildApp(language, relativePathToRoot) {
                 <ion-icon name="mail-outline"></ion-icon>
             </a>
             <p>danielborgescrema@gmail.com</p>
+        </div>
+
+        <div id="containerDownloadButton">
+            <button id="downloadButton">
+                <ion-icon name="download-outline" id="downloadIcon"></ion-icon>
+                <p>${appSetup.downloadButtonLabel}</p>
+            </button>
         </div>
 
         <div id="social-links">
