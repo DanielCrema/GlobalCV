@@ -13,11 +13,17 @@ function toggleMode() {
         if (html.classList.contains("light")) {
             img.setAttribute("alt", alt)
             img.setAttribute("src", lightSrc)
+            sessionStorage.setItem("lightMode", "true");
         } else {
             img.setAttribute("alt", alt)
             img.setAttribute("src", darkSrc)
+            sessionStorage.setItem("lightMode", "false");
         }
     })
+
+    if (sessionStorage.getItem("lightMode") === "true") {
+        switchMode.click()
+    }
 }
 
 function toggleDropdown() {
