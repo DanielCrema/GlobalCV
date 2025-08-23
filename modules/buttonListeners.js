@@ -17,7 +17,7 @@ function toggleMode() {
         } else {
             img.setAttribute("alt", alt)
             img.setAttribute("src", darkSrc)
-            localStorage.setItem("lightMode", "false");
+            localStorage.removeItem("lightMode");
         }
     })
 
