@@ -1,9 +1,18 @@
 export function buildApp(language, relativePathToRoot) {
+    if (!language || !relativePathToRoot) {
+        return
+    }
+    // Clear elegant fail message
+    const container = document.getElementById("container");
+    container.innerHTML = "";
+
+    // Function to capitalize. Since Javascript doesn't have it :)
     function capitalize(str) {
         if (!str) return "";
         return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
     }
 
+    // Setups per language
     const englishSetup = {
         title: 'International CV',
         topbarHeading: 'Pages',
@@ -52,6 +61,7 @@ export function buildApp(language, relativePathToRoot) {
         flagLinks: ['', './english.html', './portuguese.html', './spanish.html']
     }
 
+    // Build app setup
     let appSetup = {};
     const langNamesNative = {
         en: "English",
@@ -77,6 +87,7 @@ export function buildApp(language, relativePathToRoot) {
             appSetup = englishSetup;
     }
 
+    // Build app HTML
     const app = `
         <div id="containerLang">
             <p id="langHeading">${appSetup.langHeading}</p>
@@ -129,13 +140,6 @@ export function buildApp(language, relativePathToRoot) {
             <div id="flipbook"></div>
         </div>
 
-        <div id="email">
-            <a href="mailto:danielborgescrema@gmail.com" target="_blank" rel="noopener noreferrer">
-                <ion-icon name="mail-outline"></ion-icon>
-            </a>
-            <p>danielborgescrema@gmail.com</p>
-        </div>
-
         <div id="containerDownloadButton">
             <button id="downloadButton">
                 <ion-icon name="download-outline" id="downloadIcon"></ion-icon>
@@ -157,23 +161,27 @@ export function buildApp(language, relativePathToRoot) {
                 <ion-icon name="briefcase-outline"></ion-icon>
             </a>
         </div>
+    
+        <div id="email">
+            <a href="mailto:danielborgescrema@gmail.com" target="_blank" rel="noopener noreferrer">
+                <ion-icon name="mail-outline"></ion-icon>
+            </a>
+            <p>danielborgescrema@gmail.com</p>
+        </div>
 
         <footer>
             <p lang="en">${appSetup.footer}</p>
         </footer>
     `
 
-    // Appending the body and scripts
+    // Appending the content and scripts
+    container.innerHTML = app;
+
     function injectScript(src) {
         const script = document.createElement("script");
         script.src = src;
         document.body.appendChild(script)
     }
-
-    const container = document.getElementById("container");
-    container.innerHTML = "";
-    container.innerHTML = app;
-
     injectScript(`${relativePathToRoot}/modules/buttonListeners.js`);
     injectScript(`${relativePathToRoot}/modules/structured-data.js`);
     injectScript(`${relativePathToRoot}/modules/navigateFlipbook.js`);

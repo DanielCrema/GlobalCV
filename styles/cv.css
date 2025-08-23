@@ -6,6 +6,8 @@
 }
 
 :root {
+  --text-color: white;
+  --text-color-secondary: #FFF;
   --topbar-background: rgba(20, 20, 20, 0.9);
   --topbar-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
   --topbar-button: #444;
@@ -13,19 +15,19 @@
   --topbar-button-hover: #666;
   --input-background: #222;
   --input-color: #FFF;
-  --typography-color: #FFF;
 }
 
 .light {
+  --text-color: black;
+  --text-color-secondary: #FFF;
   --topbar-background: rgba(220, 220, 220, 0.9);
   --topbar-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-  --topbar-button: #a070ff;
-  --topbar-button-locked: #c0a0ff;
-  --topbar-button-hover: #9250ff;
+  --topbar-button: rgb(160, 112, 255);
+  --topbar-button-locked: rgb(192, 160, 255);
+  --topbar-button-hover: rgb(146, 80, 255);
   --input-background: #eee;
   --input-border: #CCC;
   --input-color: #222;
-  --typography-color: #FFF;
 }
 
 #containerLang {
@@ -40,6 +42,7 @@
 }
 
 #langHeading {
+  color: var(--text-color);
   font-size: 12px;
   font-weight: 500;
   text-align: center;
@@ -82,8 +85,16 @@
   border-top-right-radius: 6px;
 }
 
+#profile {
+  color: var(--text-color);
+}
+
+#title {
+  color: var(--text-color);
+}
+
 #containerFlipbook {
-  margin-bottom: 22px;
+  margin-bottom: 18px;
   padding: 0px 16px;
 }
 
@@ -103,6 +114,7 @@
 }
 
 .topbarHeading {
+  color: var(--text-color);
   font-size: 14px;
 }
 
@@ -126,7 +138,7 @@
   justify-content: center;
   align-items: center;
   background: var(--topbar-button);
-  color: var(--typography-color);
+  color: var(--text-color-secondary);
   border: none;
   border-radius: 6px;
   padding: 6px 12px;
@@ -152,14 +164,11 @@
   outline: none;
 }
 
-#email {
-  margin-bottom: 12px;
-}
-
 #containerDownloadButton {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 #downloadButton {
@@ -171,13 +180,16 @@
   border-radius: 6px;
   padding: 8px 16px;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
-  background: var(--topbar-button-locked);
-  color: var(--typography-color);
+  background: var(--topbar-button);
+  color: var(--text-color);
+  box-shadow: var(--topbar-box-shadow);
   transition: background 0.3s ease;
 }
 
 #downloadButton:hover {
+  /* opacity: 0.9; */
   background: var(--topbar-button-hover);
 }
 
@@ -185,8 +197,19 @@
   font-size: 18px;
 }
 
+#email {
+  font-size: 14px;
+  gap: 6px;
+  margin-bottom: 26px;
+}
+
 #social-links {
-  padding-bottom: 0px;
+  padding-top: 0px;
+  padding-bottom: 4px;
+}
+
+footer {
+  color: var(--text-color);
 }
 
 @media(min-width: 1450px) {
