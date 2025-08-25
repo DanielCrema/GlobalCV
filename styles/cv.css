@@ -216,6 +216,19 @@ footer {
   #containerLang {
     margin-right: 35%;
   }
+
+  #containerFlipbook {
+    margin-bottom: 28px;
+  }
+
+  #containerDownloadButton {
+    margin-bottom: 24px;
+  }
+
+  #downloadButton {
+    font-size: 15px;
+    padding: 10px 20px;
+  }
 }
 
 @media(min-width: 1200px) {
@@ -234,6 +247,14 @@ footer {
 
   .topbar {
     width: 80%;
+  }
+
+  #containerFlipbook {
+    margin-bottom: 24px;
+  }
+
+  #containerDownloadButton {
+    margin-bottom: 20px;
   }
 }
 
